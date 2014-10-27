@@ -26,10 +26,9 @@ body {
   position: relative;
   float: left;
   box-sizing: border-box;
-  width: 440px;
-  height: 215px;
+  width: 100%;
+  height: 315px;
   margin-left: 20px;
-  margin-bottom: 20px;
 
   border: 1px solid #ddd;
   border-radius: 5px;
@@ -49,8 +48,9 @@ body {
 }
 
 .content {
+  position: relative;
   box-sizing: border-box;
-  height: 143px;
+  height: 243px;
   padding: 20px;
 }
 
@@ -68,11 +68,33 @@ body {
 }
 
 .title {
-  font-size: 22px;
+  font-size: 24px;
   font-weight: bold;
   min-height: 2em;
 }
 
 .description {
-  color: #777;
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  z-index: 200;
+
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 1.35;
+  font-weight: 300;
+}
+
+.activity {
+  z-index: 100;
+  position: absolute;
+  height: 120px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.bar {
+  background-color: #fafafa;
+  position: absolute;
+  bottom: 0;
 }
