@@ -1,10 +1,61 @@
+/**
+ * Simple function to return how long ago "in words" a passed in Date() object
+ * happened
+ *
+ * For example: "3 years ago" or "2 weeks ago"
+ * The smallest granularity is "today"
+ */
+function timeAgoInWords(ts) {
+    var ms = new Date() - ts;
+    var days = ms / 1000 / 60 / 60 / 24;
+
+    function ntext(n, singular, plural) {
+        if (n >= 1 && n < 2) {
+            return "1 " + singular;
+        } else {
+            return parseInt(n) + " " + plural;
+        }
+    }
+
+    if (days > 365) {
+        var years = days / 365;
+        return ntext(years, "year", "years") + " ago";
+    }
+
+    if (days > 30) {
+        var months  = days / 30;
+        return ntext(months, "month", "months") + " ago";
+    }
+
+    if (days > 7) {
+        var weeks = days / 7;
+        return ntext(weeks, "week", "weeks") + " ago";
+    }
+
+    if (days >= 2) {
+        return days + " days ago"
+    } else {
+        return "today"
+    }
+}
+
 $(function () {
     $(".card").each(function () {
         var repo = $(this).data("repo");
-        var url = "https://api.github.com/repos/Khan/" + repo + "/stats/commit_activity";
+        var repoUrl = "https://api.github.com/repos/Khan/" + repo;
         var $activity = $(this).find(".activity");
+        var $updated = $(this).find(".updated-ago");
 
-        $.getJSON(url, function (data) {
+        $.getJSON(repoUrl + "/commits", function (data) {
+            try {
+                var lastUpdated = new Date(data[0].commit.committer.date);
+                $updated.text(timeAgoInWords(lastUpdated));
+            } catch (e) {
+                return;
+            }
+        });
+
+        $.getJSON(repoUrl + "/stats/commit_activity", function (data) {
             data = data.slice(26);
 
             var activityByWeek = data.map(function (week) {

@@ -177,12 +177,13 @@ body {
 }
 
 .bar {
-    background-color: #fafafa;
+    background-color: #f9f9f9;
     position: absolute;
     bottom: 0;
 }
 
 .links {
+    padding-left: 0;
     margin-top: 45px;
     text-align: center;
     display: block;
