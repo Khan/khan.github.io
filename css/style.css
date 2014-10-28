@@ -56,11 +56,40 @@ body {
     margin-left: 25px;
 }
 
-.orb {
+.logo {
     width: 95px;
     height: 95px;
     margin-top: 40px;
     border-radius: 50%;
+    background-size: contain;
+}
+
+.logo-katex {
+    background-image: url('../img/katex.png');
+}
+
+.logo-live-editor {
+    background-image: url('../img/live-editor.png');
+}
+
+.logo-perseus {
+    background-image: url('../img/perseus.png');
+}
+
+.logo-react-components {
+    background-image: url('../img/react-components.png');
+}
+
+.logo-snippets {
+    background-image: url('../img/snippets.png');
+}
+
+.logo-khan-api {
+    background-image: url('../img/khan-api.png');
+}
+
+.logo-tinyquery {
+    background-image: url('../img/tinyquery.png');
 }
 
 .content {
