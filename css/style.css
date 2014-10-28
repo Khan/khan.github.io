@@ -1,0 +1,116 @@
+body {
+    background-color: #eee;
+    font-family: 'proxima_nova_rgregular';
+}
+
+.main {
+    max-width: 900px;
+    margin: 80px auto;
+}
+
+.row {
+    margin-bottom: 20px;
+}
+
+.row::before, .row::after
+.card::before, .card::after {
+    display: table;
+    content: "";
+    line-height: 0;
+}
+
+.row::after, .card::after {
+    clear: both;
+}
+
+.card {
+    position: relative;
+    float: left;
+    box-sizing: border-box;
+    width: 440px;
+    height: 285px;
+    margin-left: 20px;
+
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.05);
+
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.card:first-child {
+    margin-left: 0;
+}
+
+.card:hover {
+    border: 1px solid #46a8bf;
+    cursor: pointer;
+}
+
+.icon {
+    float: left;
+    box-sizing: border-box;
+    width: 95px;
+    margin-left: 25px;
+}
+
+.orb {
+    width: 95px;
+    height: 95px;
+    margin-top: 40px;
+    border-radius: 50%;
+    background-color: rgb(50, 152, 147);
+}
+
+.content {
+    float: left;
+    position: relative;
+    box-sizing: border-box;
+    width: 310px;
+    height: 100%;
+    padding: 40px 25px;
+}
+
+.details {
+    box-sizing: border-box;
+    height: 70px;
+    padding: 10px 20px;
+    background-color: #f7f7f7;
+}
+
+.language {
+    color: #aaa;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+
+.title {
+    font-family: 'proxima_nova_ltsemibold';
+    font-size: 40px;
+    letter-spacing: -3px;
+    font-weight: bold;
+    min-height: 2em;
+}
+
+.description {
+    line-height: 1.35;
+    font-weight: 300;
+}
+
+.activity {
+    z-index: 100;
+    position: absolute;
+    height: 120px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.bar {
+    background-color: #fafafa;
+    position: absolute;
+    bottom: 0;
+}

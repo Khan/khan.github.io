@@ -5,6 +5,8 @@ $(function () {
         var $activity = $(this).find(".activity");
 
         $.getJSON(url, function (data) {
+            data = data.slice(26);
+
             var activityByWeek = data.map(function (week) {
                 return week.total
             });
