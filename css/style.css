@@ -8,6 +8,27 @@ body {
     margin: 80px auto;
 }
 
+.heading {
+    margin-bottom: 60px;
+}
+
+.page-logo {
+    display: block;
+    width: 175px;
+    height: 20px;
+    margin: 0 auto;
+    background-image: url('../img/ka-logo.png');
+    background-size: contain;
+}
+
+.page-title {
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(151, 174, 55);
+    font-size: 2.25em;
+    letter-spacing: 4px;
+}
+
 .row {
     margin-bottom: 20px;
 }
@@ -152,4 +173,19 @@ body {
     background-color: #fafafa;
     position: absolute;
     bottom: 0;
+}
+
+@media (max-width: 915px) {
+    .main {
+        width: 100%;
+    }
+
+    .row {
+        width: 440px;
+        margin: 0 auto;
+    }
+
+    .card {
+        margin-left: 0;
+    }
 }
