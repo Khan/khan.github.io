@@ -64,12 +64,14 @@ body {
 }
 
 .content {
-    float: left;
-    position: relative;
+    position: absolute;
+    z-index: 200;
+
     box-sizing: border-box;
+    padding: 40px 25px;
+    left: 120px;
     width: 310px;
     height: 100%;
-    padding: 40px 25px;
 }
 
 .details {
