@@ -66,8 +66,36 @@ body {
 }
 
 .card:hover {
-    border: 1px solid #46a8bf;
+    border: 1px solid;
     cursor: pointer;
+}
+
+.card-katex:hover {
+    border-color: rgb(22, 142, 133);
+}
+
+.card-live-editor:hover {
+    border-color: rgb(74, 195, 199);
+}
+
+.card-perseus:hover {
+    border-color: rgb(227, 101, 89);
+}
+
+.card-react-components:hover {
+    border-color: rgb(60, 68, 87);
+}
+
+.card-snippets:hover {
+    border-color: rgb(217, 174, 90);
+}
+
+.card-khan-api:hover {
+    border-color: rgb(164, 192, 72);
+}
+
+.card-tiny-query:hover {
+    border-color: rgb(126, 116, 156);
 }
 
 .icon {
