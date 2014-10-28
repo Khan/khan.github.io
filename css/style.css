@@ -182,6 +182,43 @@ body {
     bottom: 0;
 }
 
+.links {
+    margin-top: 45px;
+    text-align: center;
+    display: block;
+    list-style: none;
+}
+
+.link {
+    padding: 0;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.link::before {
+    content: "·";
+    color: rgb(151, 174, 55);
+    position: relative;
+    left: -12px;
+}
+
+.link:first-child {
+    margin-left: 0;
+}
+
+.link:first-child::before {
+    content: "";
+}
+
+.link a {
+    text-decoration: none;
+    color: rgb(151, 174, 55);
+}
+
+.link a:hover {
+    opacity: 0.6;
+}
+
 @media (max-width: 915px) {
     .main {
         width: 100%;
