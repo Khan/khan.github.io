@@ -5,7 +5,7 @@ body {
 
 .main {
     width: 900px;
-    margin: 80px auto;
+    margin: 80px auto 30px;
 }
 
 .heading {
@@ -29,11 +29,7 @@ body {
     letter-spacing: 4px;
 }
 
-.row {
-    margin-bottom: 20px;
-}
-
-.row::before, .row::after
+.row::before, .row::after,
 .card::before, .card::after {
     display: table;
     content: "";
@@ -63,39 +59,6 @@ body {
 
 .card:first-child {
     margin-left: 0;
-}
-
-.card:hover {
-    border: 1px solid;
-    cursor: pointer;
-}
-
-.card-katex:hover {
-    border-color: rgb(22, 142, 133);
-}
-
-.card-live-editor:hover {
-    border-color: rgb(74, 195, 199);
-}
-
-.card-perseus:hover {
-    border-color: rgb(227, 101, 89);
-}
-
-.card-react-components:hover {
-    border-color: rgb(60, 68, 87);
-}
-
-.card-snippets:hover {
-    border-color: rgb(217, 174, 90);
-}
-
-.card-khan-api:hover {
-    border-color: rgb(164, 192, 72);
-}
-
-.card-tiny-query:hover {
-    border-color: rgb(126, 116, 156);
 }
 
 .icon {
@@ -152,30 +115,21 @@ body {
     height: 100%;
 }
 
-.details {
-    box-sizing: border-box;
-    height: 70px;
-    padding: 10px 20px;
-    background-color: #f7f7f7;
-}
-
 .language {
     color: #aaa;
     font-size: 12px;
     font-weight: bold;
     text-transform: uppercase;
-    letter-spacing: -1px;
 }
 
 .title {
     font-family: 'proxima_nova_ltsemibold';
-    font-size: 40px;
-    letter-spacing: -1px;
+    font-size: 30px;
     font-weight: bold;
 }
 
 .title-long {
-    font-size: 32px;
+    font-size: 29px;
 }
 
 .updated {
@@ -186,6 +140,31 @@ body {
 .description {
     line-height: 1.35;
     font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.actions {
+    position: absolute;
+    bottom: 40px;
+    left: 25px;
+    right: 25px;
+}
+
+.button {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    border: 2px solid rgb(151, 174, 55);
+    color: rgb(151, 174, 55);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+
+.button:hover {
+    cursor: pointer;
+    color: #fff;
+    background-color: rgb(151, 174, 55);
 }
 
 .activity {
