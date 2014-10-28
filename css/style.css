@@ -4,7 +4,7 @@ body {
 }
 
 .main {
-    max-width: 900px;
+    width: 900px;
     margin: 80px auto;
 }
 
@@ -30,6 +30,7 @@ body {
     width: 440px;
     height: 285px;
     margin-left: 20px;
+    margin-bottom: 20px;
 
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -60,7 +61,6 @@ body {
     height: 95px;
     margin-top: 40px;
     border-radius: 50%;
-    background-color: rgb(50, 152, 147);
 }
 
 .content {
@@ -90,9 +90,17 @@ body {
 .title {
     font-family: 'proxima_nova_ltsemibold';
     font-size: 40px;
-    letter-spacing: -3px;
+    letter-spacing: -1px;
     font-weight: bold;
-    min-height: 2em;
+}
+
+.title-long {
+    font-size: 32px;
+}
+
+.updated {
+    color: #ccc;
+    min-height: 1.7em;
 }
 
 .description {
