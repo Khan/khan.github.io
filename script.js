@@ -33,9 +33,11 @@ function timeAgoInWords(ts) {
     }
 
     if (days >= 2) {
-        return days + " days ago"
+        return parseInt(days) + " days ago";
+    } else if (days >= 1) {
+        return "yesterday";
     } else {
-        return "today"
+        return "today";
     }
 }
 
