@@ -104,6 +104,26 @@ body {
     background-image: url('../img/tinyquery.png');
 }
 
+.logo-gae_mini_profiler {
+    background-image: url('../img/gae_mini_profiler.png');
+}
+
+.logo-i18nize_templates {
+    background-image: url('../img/i18nize_templates.png');
+}
+
+.logo-guacamole {
+    background-image: url('../img/guacamole.png');
+}
+
+.logo-khan-exercises {
+    background-image: url('../img/khan-exercises.png');
+}
+
+.logo-structuredjs {
+    background-image: url('../img/structuredjs.png');
+}
+
 .content {
     position: absolute;
     z-index: 200;
