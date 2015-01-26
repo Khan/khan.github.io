@@ -124,6 +124,10 @@ body {
     background-image: url('../img/structuredjs.png');
 }
 
+.logo-kmath {
+    background-image: url('../img/kmath.svg');
+}
+
 .content {
     position: absolute;
     z-index: 200;
