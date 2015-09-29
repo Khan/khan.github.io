@@ -24,7 +24,7 @@ body {
 .page-title {
     text-align: center;
     text-transform: uppercase;
-    color: rgb(151, 174, 55);
+    color: #7d9200;
     font-size: 2.25em;
     letter-spacing: 4px;
 }
@@ -144,7 +144,7 @@ body {
 }
 
 .language {
-    color: #aaa;
+    color: #767676;
     font-size: 12px;
     font-weight: bold;
     text-transform: uppercase;
@@ -161,7 +161,7 @@ body {
 }
 
 .updated {
-    color: #ccc;
+    color: #767676;
     min-height: 1.7em;
 }
 
@@ -182,8 +182,8 @@ body {
     text-decoration: none;
     display: block;
     text-align: center;
-    border: 2px solid rgb(151, 174, 55);
-    color: rgb(151, 174, 55);
+    border: 2px solid #6b7f00;
+    color: #6b7f00;
     border-radius: 5px;
     padding: 10px;
 }
@@ -192,7 +192,7 @@ body {
 .button:hover {
     cursor: pointer;
     color: #fff;
-    background-color: rgb(151, 174, 55);
+    background-color: #6b7f00;
 }
 
 .activity {
@@ -205,7 +205,7 @@ body {
 }
 
 .bar {
-    background-color: #f9f9f9;
+    background-color: #eee;
     position: absolute;
     bottom: 0;
 }
@@ -226,7 +226,7 @@ body {
 
 .link::before {
     content: "·";
-    color: rgb(151, 174, 55);
+    color: #627400;
     position: relative;
     left: -12px;
 }
@@ -241,11 +241,22 @@ body {
 
 .link a {
     text-decoration: none;
-    color: rgb(151, 174, 55);
+    color: #627400;
 }
 
 .link a:hover {
     opacity: 0.6;
+}
+
+.sr-only {
+    border: 0;
+    clip: rect(0,0,0,0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
 }
 
 @media (max-width: 915px) {
