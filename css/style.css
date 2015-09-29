@@ -29,14 +29,17 @@ body {
     letter-spacing: 4px;
 }
 
-.row::before, .row::after,
-.card::before, .card::after {
+.row::before,
+.row::after,
+.card::before,
+.card::after {
     display: table;
     content: "";
     line-height: 0;
 }
 
-.row::after, .card::after {
+.row::after,
+.card::after {
     clear: both;
 }
 
@@ -189,7 +192,8 @@ body {
 }
 
 
-.button:hover {
+.button:hover,
+.button:focus {
     cursor: pointer;
     color: #fff;
     background-color: #6b7f00;
@@ -250,7 +254,7 @@ body {
 
 .sr-only {
     border: 0;
-    clip: rect(0,0,0,0);
+    clip: rect(0, 0, 0, 0);
     height: 1px;
     margin: -1px;
     overflow: hidden;
