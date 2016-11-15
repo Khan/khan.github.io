@@ -79,6 +79,10 @@ body {
     background-size: contain;
 }
 
+.logo-aphrodite {
+    background-image: url('../img/aphrodite.png');
+}
+
 .logo-katex {
     background-image: url('../img/katex.png');
 }
