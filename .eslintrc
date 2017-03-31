@@ -1,0 +1,16 @@
+// These are rules that apply to javascript files, particularly for
+// KA webapp.  These files use ES6 constructs, which get transpiled
+// down to ES5 before deploying.  They are also often jsx files.
+// They also allow a lot of globals because they use third-party
+// packages that expose globals, or for backwards-compatibility
+// reasons.
+//
+// If you want to adjust/add a rule that is not ES6-, flow-, or jsx-specific,
+// modify eslintrc.shared instead.  In particular, when adjusting the
+// list of built-in globals (useful for both javascript files and
+// <script> contents inside html), do that in eslintrc.shared.
+{
+    "env": {
+        "browser": true,
+    }
+}

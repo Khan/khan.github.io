@@ -41,6 +41,29 @@ function timeAgoInWords(ts) {
     }
 }
 
+function getJSONFallbackToCache(url, handler) {
+    var errorHandler = function() {
+        if (!localStorage) {
+            return;
+        }
+
+        var data = localStorage.getItem(url);
+
+        if (data) {
+            data = JSON.parse(data);
+            handler(data);
+        }
+    }
+
+    var result = $.getJSON(url, function(data) {
+        if (localStorage) {
+            localStorage.setItem(url, JSON.stringify(data));
+        }
+
+        handler(data);
+    }).fail(errorHandler);
+}
+
 $(function () {
     $(".card").each(function () {
         var repo = $(this).data("repo");
@@ -48,7 +71,7 @@ $(function () {
         var $activity = $(this).find(".activity");
         var $updated = $(this).find(".updated-ago");
 
-        $.getJSON(repoUrl + "/commits", function (data) {
+        getJSONFallbackToCache(repoUrl + "/commits", function (data) {
             try {
                 var lastUpdated = new Date(data[0].commit.committer.date);
                 $updated.text(timeAgoInWords(lastUpdated));
@@ -57,7 +80,7 @@ $(function () {
             }
         });
 
-        $.getJSON(repoUrl + "/stats/commit_activity", function (data) {
+        getJSONFallbackToCache(repoUrl + "/stats/commit_activity", function (data) {
             data = data.slice(26);
 
             var activityByWeek = data.map(function (week) {
