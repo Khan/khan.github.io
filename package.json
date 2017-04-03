@@ -1,0 +1,21 @@
+{
+  "name": "khan.github.io",
+  "version": "1.0.0",
+  "description": "Our OSS info page",
+  "scripts": {
+    "build": "node tools/build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Khan/khan.github.io.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Khan/khan.github.io/issues"
+  },
+  "homepage": "https://github.com/Khan/khan.github.io#readme",
+  "devDependencies": {
+    "handlebars": "^4.0.6"
+  }
+}
