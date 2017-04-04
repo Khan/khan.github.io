@@ -139,6 +139,22 @@ body {
     background-image: url('../img/kmath.svg');
 }
 
+.logo-fuzzy-match-utils {
+    background-image: url('../img/Fuzzy-match-utils.png');
+}
+
+.logo-mu-lambda {
+    background-image: url('../img/Mu-lambda.png');
+}
+
+.logo-react-balance-text {
+    background-image: url('../img/React-balance-text.png');
+}
+
+.logo-react-multi-select {
+    background-image: url('../img/React-multi-select.png');
+}
+
 .content {
     position: absolute;
     z-index: 200;
