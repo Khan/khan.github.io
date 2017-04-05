@@ -75,7 +75,7 @@ var entries = [
     description: "Documentation for (and examples of) using the Khan Academy API."
 }, {
     projectSlug: "tinyquery",
-    projectName: "Tiny Query",
+    projectName: "TinyQuery",
     language: "Python",
     description: "A Python in-memory test stub for BigQuery."
 }, {
