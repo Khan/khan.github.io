@@ -33,7 +33,7 @@ var entries = [
     projectSlug: "kmath",
     projectName: "Kmath",
     language: "JavaScript",
-    description: "avaScript Numeric Math Utilities."
+    description: "JavaScript Numeric Math Utilities."
 },
     // Some new projects, which we'd like to be closer to the top
 {
