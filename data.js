@@ -98,6 +98,12 @@ var entries = [
     projectName: "Structured JS",
     language: "JavaScript",
     description: "A simple interface for checking the structure of JavaScript code."
-}];
+}, {
+    projectSlug: "swifttweaks",
+    projectName: "SwiftTweaks",
+    language: "Swift",
+    description: "Adjust your iOS app on-device, without needing to recompile."
+}
+];
 
 module.exports = entries;
