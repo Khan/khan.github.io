@@ -30,6 +30,11 @@ var entries = [
     language: "JavaScript",
     description: "An accessibility (a11y) visualization toolkit."
 }, {
+    projectSlug: "swifttweaks",
+    projectName: "SwiftTweaks",
+    language: "Swift",
+    description: "Adjust your iOS app on-device, without needing to recompile."
+}, {
     projectSlug: "kmath",
     projectName: "Kmath",
     language: "JavaScript",
@@ -98,6 +103,7 @@ var entries = [
     projectName: "Structured JS",
     language: "JavaScript",
     description: "A simple interface for checking the structure of JavaScript code."
-}];
+}
+];
 
 module.exports = entries;
