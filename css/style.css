@@ -15,10 +15,11 @@ body {
 .page-logo {
     display: block;
     width: 175px;
-    height: 20px;
+    height: 40px;
     margin: 0 auto;
     background-image: url('../img/ka-logo.png');
     background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .page-title {
