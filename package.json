@@ -16,6 +16,6 @@
   },
   "homepage": "https://github.com/Khan/khan.github.io#readme",
   "devDependencies": {
-    "handlebars": "^4.0.6"
+    "handlebars": "^4.0.14"
   }
 }
