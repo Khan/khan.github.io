@@ -42,6 +42,11 @@ var entries = [
 },
     // Some new projects, which we'd like to be closer to the top
 {
+    projectSlug: "genqlient",
+    projectName: "genqlient",
+    language: "Go",
+    description: "A truly type-safe GraphQL client for Go."
+}, {
     projectSlug: "mu-lambda",
     projectName: "Mu Lambda",
     language: "JavaScript",
