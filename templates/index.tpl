@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Open Source – Khan Academy</title>
     <link rel="icon" href="favicon.ico" />
-    <link rel="stylesheet" href="css/webfont.css" />
+    <link rel="stylesheet" href="css/font.css" />
     <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>

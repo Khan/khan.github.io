@@ -1,7 +1,7 @@
 
         <div class="card-content" data-repo="{{projectSlug}}">
             <div class="icon">
-                <div class="logo logo-{{projectSlug}}"></div>
+                <div class="logo" style="background-image: url('{{projectLogo}}')"></div>
             </div>
             <div class="content">
                 <div class="language">
