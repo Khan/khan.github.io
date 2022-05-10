@@ -14,7 +14,7 @@ body {
 
 .page-logo {
     display: block;
-    width: 175px;
+    width: 200px;
     height: 40px;
     margin: 0 auto;
     background-image: url('../img/ka-logo.png');
@@ -24,8 +24,7 @@ body {
 
 .page-title {
     text-align: center;
-    text-transform: uppercase;
-    color: #1865f2; /* Wonder Blocks blue */
+    color: #21242c; /* Off-black */
     font-size: 3em;
     font-weight: 900;
     letter-spacing: 2px;
