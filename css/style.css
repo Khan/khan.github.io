@@ -1,20 +1,20 @@
 body {
     background-color: #eee;
-    font-family: 'proxima_nova_rgregular';
+    font-family: 'Lato';
 }
 
 .main {
     width: 900px;
-    margin: 80px auto 30px;
+    margin: 30px auto 30px;
 }
 
 .heading {
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 
 .page-logo {
     display: block;
-    width: 175px;
+    width: 200px;
     height: 40px;
     margin: 0 auto;
     background-image: url('../img/ka-logo.png');
@@ -24,10 +24,12 @@ body {
 
 .page-title {
     text-align: center;
-    text-transform: uppercase;
-    color: #7d9200;
-    font-size: 2.25em;
-    letter-spacing: 4px;
+    color: #21242c; /* Off-black */
+    font-size: 3em;
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .row::before,
@@ -80,86 +82,6 @@ body {
     background-size: contain;
 }
 
-.logo-aphrodite {
-    background-image: url('../img/aphrodite.svg');
-}
-
-.logo-katex {
-    background-image: url('../img/katex.png');
-}
-
-.logo-live-editor {
-    background-image: url('../img/live-editor.png');
-}
-
-.logo-tota11y {
-    background-image: url('../img/tota11y.png');
-}
-
-.logo-perseus {
-    background-image: url('../img/perseus.png');
-}
-
-.logo-react-components {
-    background-image: url('../img/react-components.png');
-}
-
-.logo-snippets {
-    background-image: url('../img/snippets.png');
-}
-
-.logo-khan-api {
-    background-image: url('../img/khan-api.png');
-}
-
-.logo-tinyquery {
-    background-image: url('../img/tinyquery.png');
-}
-
-.logo-gae_mini_profiler {
-    background-image: url('../img/gae_mini_profiler.png');
-}
-
-.logo-i18nize_templates {
-    background-image: url('../img/i18nize_templates.png');
-}
-
-.logo-guacamole {
-    background-image: url('../img/guacamole.png');
-}
-
-.logo-khan-exercises {
-    background-image: url('../img/khan-exercises.png');
-}
-
-.logo-structuredjs {
-    background-image: url('../img/structuredjs.png');
-}
-
-.logo-swifttweaks {
-    background-image: url('../img/swifttweaks.png');
-}
-
-.logo-kmath {
-    background-image: url('../img/kmath.svg');
-}
-
-.logo-fuzzy-match-utils {
-    background-image: url('../img/Fuzzy-match-utils.png');
-}
-
-.logo-mu-lambda {
-    background-image: url('../img/Mu-lambda.png');
-}
-
-.logo-react-balance-text {
-    background-image: url('../img/React-balance-text.png');
-}
-
-.logo-react-multi-select {
-    background-image: url('../img/React-multi-select.png');
-}
-
 .content {
     position: absolute;
     z-index: 200;
@@ -179,7 +101,7 @@ body {
 }
 
 .title {
-    font-family: 'proxima_nova_ltsemibold';
+    font-family: 'Lato';
     font-size: 30px;
     font-weight: bold;
 }
@@ -210,8 +132,8 @@ body {
     text-decoration: none;
     display: block;
     text-align: center;
-    border: 2px solid #6b7f00;
-    color: #6b7f00;
+    border: 2px solid #1865f2; /* Wonder Blocks blue */
+    color: #1865f2; /* Wonder Blocks blue */
     border-radius: 5px;
     padding: 10px;
 }
@@ -270,7 +192,7 @@ body {
 
 .link a {
     text-decoration: none;
-    color: #627400;
+    color: #21242c; /* Off-black */
 }
 
 .link a:hover {
