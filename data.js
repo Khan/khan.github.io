@@ -29,12 +29,6 @@ var entries = [
         projectLogo: "./img/perseus.png",
         description: "Khan Academy's exercise question editor and renderer."
     }, {
-        projectSlug: "tota11y",
-        projectName: "Tota11y",
-        language: "JavaScript",
-        projectLogo: "./img/tota11y.png",
-        description: "An accessibility (a11y) visualization toolkit."
-    }, {
         projectSlug: "perseus/tree/main/packages/kmath",
         projectName: "Kmath",
         language: "JavaScript",
